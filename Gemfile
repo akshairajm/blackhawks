@@ -22,7 +22,7 @@ end
 
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0.5'
-
+gem 'httparty', '~> 0.12.0'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

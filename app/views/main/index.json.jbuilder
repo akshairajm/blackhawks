@@ -1,1 +1,1 @@
-json.name 'BlackHawks'
+json.name 'Black Hawks'
