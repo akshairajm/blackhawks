@@ -11,7 +11,7 @@ angular.module('Hawks').run(function($templateCache) {
 		'</ul>',
   		'</div>'].join(''));
 });
-angular.module('Hawks').config(function($stateProvider, $urlRouterProvider) {
+angular.module('Hawks').config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
     
     $urlRouterProvider.otherwise('/');
     
@@ -28,7 +28,7 @@ angular.module('Hawks').config(function($stateProvider, $urlRouterProvider) {
             // we'll get to this in a bit       
         });
         
-});
+}]);
 
 angular.module('Hawks').controller('MainCtrl', ['$scope','MainSrv',function($scope, MainSrv) {
 	$scope.data = {};
