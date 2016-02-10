@@ -1,5 +1,5 @@
 angular.module('Hawks', ['ui.router']);
-angular.module('Hawks').run(function($templateCache) {
+angular.module('Hawks').run(['$templateCache', function($templateCache) {
   $templateCache.put('partial-home.html', ['<div ng-controller="MainCtrl">',
   		'<h1> <figure class="clan-badge" data-level="{{data.clanLevel}}">',
   			'<img  src="{{data.badgeUrls.small}}" /></figure>',
@@ -10,7 +10,7 @@ angular.module('Hawks').run(function($templateCache) {
   			' {{member.name}} - trophies: {{member.trophies}}</li>',
 		'</ul>',
   		'</div>'].join(''));
-});
+}]);
 angular.module('Hawks').config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
     
     $urlRouterProvider.otherwise('/');
