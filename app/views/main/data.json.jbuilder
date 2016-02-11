@@ -1,1 +1,1 @@
-json.data @ans
+json.data @data
