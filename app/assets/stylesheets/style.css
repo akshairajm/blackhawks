@@ -11,6 +11,13 @@
 	padding-top: 30vh;
 	color: white;
 }
+
+body {
+	margin: 0;
+	font-size: 1em;
+	padding: 0;
+}
+
 .clan-badge {
 	display: inline-block;
 	width: 70px;
