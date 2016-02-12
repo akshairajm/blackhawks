@@ -1,10 +1,5 @@
-<div ng-controller="MainCtrl">
-  <h1>
-  	<figure class="clan-badge" data-level="{{data.clanLevel}}">
-  			<img  src="{{data.badgeUrls.small}}" />
-  	</figure>
-  	{{data.name}}
-  </h1>
+<div ng-include="'header.html'"></div>
+<div>
   <ul>
   	<li ng-repeat="member in data.memberList">
   		<img src="{{member.league.iconUrls.tiny}}" />
