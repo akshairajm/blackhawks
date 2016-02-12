@@ -17,4 +17,4 @@
 
 /app/assets/node_modules
 /public/**/*.*
-Gemfile.lock
+
