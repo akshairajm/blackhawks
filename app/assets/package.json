@@ -1,0 +1,24 @@
+{
+  "name": "blackhawks-coc",
+  "version": "1.0.0",
+  "description": "Clan website for BlackHawks India",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shidil Eringa",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp-angular-templatecache": "^1.8.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-minify-css": "^1.2.2",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sass": "^2.1.0",
+    "gulp-uglify": "^1.5.1",
+    "gulp-webserver": "^0.9.1",
+    "opn": "^3.0.3"
+  },
+  "dependencies": {
+    "gulp-shell": "^0.5.2"
+  }
+}
