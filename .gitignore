@@ -13,3 +13,8 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+/vendor/cache
+
+/app/assets/node_modules
+/public/**/*.*
+Gemfile.lock
