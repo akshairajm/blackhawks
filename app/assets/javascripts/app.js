@@ -1,5 +1,5 @@
-angular.module('Hawks', ['ui.router']);
-angular.module('Hawks').config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
+var myapp = angular.module('Hawks', ['ui.router']);
+myapp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
     
     $urlRouterProvider.otherwise('/');
     
@@ -18,7 +18,7 @@ angular.module('Hawks').config(['$stateProvider', '$urlRouterProvider', function
         
 }]);
 
-angular.module('Hawks').controller('MainCtrl', ['$scope','MainSrv',function($scope, MainSrv) {
+myapp.controller('MainCtrl', ['$scope','MainSrv',function($scope, MainSrv) {
 	$scope.data = {};
 	$scope.dataLoaded = false;
 
@@ -30,7 +30,7 @@ angular.module('Hawks').controller('MainCtrl', ['$scope','MainSrv',function($sco
 
 }]);
 
-angular.module('Hawks').service('MainSrv', ['$http', '$q', function($http, $q) {
+myapp.service('MainSrv', ['$http', '$q', function($http, $q) {
 	this.getInitialData = function() {
 		var def = $q.defer();
 
